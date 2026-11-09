@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Brenden Latham’s public GitHub repositories, organized by topic.">
+  <title>Brenden Latham · Repository catalog</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      --background: #fafbf9;
+      --text: #1d282a;
+      --muted: #4b585c;
+      --link: #215b69;
+      --line: #d9e0dc;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: #141b1d;
+        --text: #edf1ef;
+        --muted: #b7c3c3;
+        --link: #9ed1da;
+        --line: #354345;
+      }
+    }
+
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--text);
+      font: 1rem/1.55 system-ui, sans-serif;
+    }
+
+    main {
+      max-width: 61rem;
+      margin-inline: auto;
+      padding: clamp(2.6rem, 7.5vw, 5rem) clamp(1.15rem, 5vw, 2.75rem) 4rem;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: end;
+      justify-content: space-between;
+      gap: .85rem 1.5rem;
+      padding-bottom: 1.6rem;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .kicker {
+      margin: 0 0 .35rem;
+      color: var(--muted);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .095em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 6.5vw, 3.85rem);
+      font-weight: 690;
+      line-height: 1.08;
+      letter-spacing: -.057em;
+    }
+
+    .profile { padding-block: .25rem; font-size: .9rem; font-weight: 650; }
+
+    a {
+      color: var(--link);
+      text-decoration-thickness: .06em;
+      text-underline-offset: .24em;
+    }
+
+    a:hover { text-decoration-thickness: .12em; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+
+    section { margin-top: 2.05rem; }
+    h2 {
+      margin: 0 0 .5rem;
+      font-size: 1.05rem;
+      font-weight: 720;
+      line-height: 1.3;
+      letter-spacing: -.016em;
+    }
+
+    ul { padding: 0; margin: 0; list-style: none; }
+    li {
+      display: grid;
+      grid-template-columns: minmax(12rem, .75fr) minmax(0, 2fr);
+      align-items: baseline;
+      gap: .25rem 1.4rem;
+      padding: .62rem 0;
+      border-top: 1px solid var(--line);
+    }
+
+    li > a {
+      justify-self: start;
+      font: 650 .85rem/1.55 ui-monospace, SFMono-Regular, Consolas, monospace;
+      overflow-wrap: anywhere;
+    }
+
+    li > p { margin: 0; color: var(--muted); font-size: .93rem; }
+
+    @media (max-width: 38rem) {
+      .intro { align-items: start; flex-direction: column; }
+      li { grid-template-columns: minmax(0, 1fr); padding-block: .72rem; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="intro">
+      <div>
+        <p class="kicker">Repository catalog</p>
+        <h1>Brenden Latham</h1>
+      </div>
+      <a class="profile" href="https://github.com/BrendenLatham">GitHub profile <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section>
+      <h2>Reinforcement learning and LLM alignment</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/robust_sim">robust_sim</a><p>Simulation suite for online distributionally robust average-reward MDPs, with robust and nominal learning benchmarks under full and restricted transition support.</p></li>
+        <li><a href="https://github.com/BrendenLatham/constrained-alpaca-7b">constrained-alpaca-7b</a><p>Constrained preference learning with Alpaca-7B as the reference policy, using safety and helpfulness labels from PKU-SafeRLHF.</p></li>
+        <li><a href="https://github.com/BrendenLatham/constrained_rlhf">constrained_rlhf</a><p>Constrained RLHF experiments with a PPO-based Llama training script and a synthetic two-oracle bandit sandbox.</p></li>
+        <li><a href="https://github.com/BrendenLatham/RLHF_Topics_In_CS2">RLHF_Topics_In_CS2</a><p>Supervised fine-tuning and Direct Preference Optimization experiments on quantized Llama 3.1 8B. Fork of GautamSharda/rlhf.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Robotics and parallel computing</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/MRTA_Uncertainty">MRTA_Uncertainty</a><p>C++ experiments on multi-robot task allocation under uncertainty, including a parallel MPI implementation.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Machine learning and forecasting</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/vae_em">vae_em</a><p>Compares a variational autoencoder with approximate expectation-maximization using Langevin sampling on MNIST and PBMC 10k single-cell RNA-seq data.</p></li>
+        <li><a href="https://github.com/BrendenLatham/march-madness-predictor">march-madness-predictor</a><p>Python project for NCAA tournament simulation and historical backtesting, with data collection, team metrics, and parameter tuning.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Data analysis and visualization</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/Data_Viz">Data_Viz</a><p>Course notebooks on data cleaning, web scraping, BigQuery, and visualization techniques for distributions and uncertainty.</p></li>
+        <li><a href="https://github.com/BrendenLatham/horse-stats">horse-stats</a><p>R Markdown analysis of 2020 Road to the Kentucky Derby statistics for 30 horses.</p></li>
+        <li><a href="https://github.com/BrendenLatham/SnOasis">SnOasis</a><p>Python notebook exploring SnOasis sales and weather data. Fork of nurfnick/SnOasis.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Web development</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/galeria_production">galeria_production</a><p>Production version of the Galeria storefront codebase, with a React build, an Express server, and MongoDB integration.</p></li>
+        <li><a href="https://github.com/BrendenLatham/Galeria_Redesign">Galeria_Redesign</a><p>Redesign of the Galeria storefront with React pages for search, products, sign-in, and the shopping cart.</p></li>
+        <li><a href="https://github.com/BrendenLatham/Galeria_testing">Galeria_testing</a><p>Galeria development prototype for testing storefront search, product pages, authentication, and cart flows.</p></li>
+        <li><a href="https://github.com/BrendenLatham/web-programming">web-programming</a><p>Source for Travel Spots by State, with map and review pages built in HTML, CSS, and JavaScript.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Mathematics and programming practice</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/Numerical-Analysis">Numerical-Analysis</a><p>Course notebooks on numerical differentiation and integration, nonlinear root finding, interpolation, regression, and systems of equations.</p></li>
+        <li><a href="https://github.com/BrendenLatham/DiscreteMath">DiscreteMath</a><p>Python notebooks for a discrete mathematics course project, including examples built around sets of playing cards.</p></li>
+        <li><a href="https://github.com/BrendenLatham/simulations">simulations</a><p>Probability simulation notebook illustrating the Monty Hall problem.</p></li>
+        <li><a href="https://github.com/BrendenLatham/data-apps-in-business">data-apps-in-business</a><p>Notebook demonstrating AI-assisted Python coding through complex-number calculations and plots.</p></li>
+        <li><a href="https://github.com/BrendenLatham/C-practice">C-practice</a><p>C exercises covering command-line programs, a calculator, and stack and queue implementations.</p></li>
+        <li><a href="https://github.com/BrendenLatham/OOP-practice">OOP-practice</a><p>C++ exercises on inheritance, shape classes, and random number generation.</p></li>
+        <li><a href="https://github.com/BrendenLatham/python-practice">python-practice</a><p>Introductory Python practice with a simple calculator script.</p></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Tools and forks</h2>
+      <ul role="list">
+        <li><a href="https://github.com/BrendenLatham/twint">twint</a><p>Fork of twintproject/twint, a Python tool built to collect Twitter data without the official API.</p></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
